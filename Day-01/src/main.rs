@@ -2,10 +2,6 @@ use std::fs::File;
 use std::io::{BufRead, BufReader};
 
 fn main() {
-    Y21D01();
-}
-
-fn Y21D01() {
     let file = File::open("main.in").expect("file wasn't found.");
     let reader = BufReader::new(file);
     let numbers: Vec<i32> = reader
