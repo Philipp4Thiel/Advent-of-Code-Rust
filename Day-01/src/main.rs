@@ -6,7 +6,7 @@ fn main() {
 }
 
 fn Y21D01() {
-    let file = File::open("inputFiles/Y21D01.in").expect("file wasn't found.");
+    let file = File::open("main.in").expect("file wasn't found.");
     let reader = BufReader::new(file);
     let numbers: Vec<i32> = reader
         .lines()
