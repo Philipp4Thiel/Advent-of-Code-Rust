@@ -7,12 +7,8 @@ const NUM_BOARDS: usize = 100;
 fn main() {
     let file = File::open("main.in").expect("file wasn't found.");
     let reader = BufReader::new(file);
-    let mut input: Vec<String> = reader
-        .lines()
-        //.map(|line| line.unwrap().parse::<instruction>().unwrap())
-        .filter_map(Result::ok)
-        .filter(|s| !s.eq(""))
-        .collect();
+    let mut input: Vec<String> = reader.lines().filter_map(Result::ok)
+        .filter(|s| !s.eq("")).collect();
 
     let numbers: Vec<u8> = input.swap_remove(0).split(",").map(|s| s.trim())
         .filter(|s| !s.is_empty()).map(|s| s.parse::<u8>().unwrap()).collect();
@@ -20,6 +16,7 @@ fn main() {
     let mut boards: [[[u8; 5]; 5]; NUM_BOARDS] = [[[0; 5]; 5]; NUM_BOARDS];
     let mut marked: [[[bool; 5]; 5]; NUM_BOARDS] = [[[false; 5]; 5]; NUM_BOARDS];
 
+    // fill boards
     for board in 0..NUM_BOARDS {
         for i in 0..5 {
             let cur_numbers: Vec<u8> = input.swap_remove(0).trim().split(" ")
@@ -46,17 +43,18 @@ fn main() {
             }
         }
 
-        // check for win
+        // check all boards for wins
         for b in 0..NUM_BOARDS {
             if !done[b] && won(&marked[b]) {
                 done[b] = true;
                 win_counter += 1;
-                if win_counter == NUM_BOARDS as u8 {
-                    println!("Task 2: {}", get_score(&boards[b], &marked[b]) * (number as u32));
-                }
+
                 if !task1 {
                     println!("Task 1: {}", get_score(&boards[b], &marked[b]) * (number as u32));
                     task1 = true;
+                }
+                if win_counter == NUM_BOARDS as u8 {
+                    println!("Task 2: {}", get_score(&boards[b], &marked[b]) * (number as u32));
                 }
             }
         }
