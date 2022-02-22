@@ -8,6 +8,8 @@ fn main() {
         .expect("file wasn't found.")).lines().filter_map(Result::ok)
         .filter(|s| !s.eq("")).collect();
 
+    dbg!(Regex::new(r"target area: x=(-?\d+)\.\.(-?\d+), y=(-?\d+)\.\.(-?\d+)").unwrap().is_match(&input));
+
     let data = Regex::new(r"target area: x=(-?\d+)\.\.(-?\d+), y=(-?\d+)\.\.(-?\d+)")
         .unwrap().captures(&input).unwrap();
 

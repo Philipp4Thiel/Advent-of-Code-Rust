@@ -3,31 +3,31 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/Day-01/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Day-02/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Day-03/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Day-04/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Day-16/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Day-17/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Day-17/Day-18/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Day-18/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Day_19/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Day_20/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day_01/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day_02/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day_03/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day_04/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day_16/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day_17/Day-18/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day_17/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day_18/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day_19/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day_20/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/src/target" />
-      <excludeFolder url="file://$MODULE_DIR$/Day-01/target" />
-      <excludeFolder url="file://$MODULE_DIR$/Day-02/target" />
-      <excludeFolder url="file://$MODULE_DIR$/Day-03/target" />
-      <excludeFolder url="file://$MODULE_DIR$/Day-04/target" />
-      <excludeFolder url="file://$MODULE_DIR$/Day-16/target" />
-      <excludeFolder url="file://$MODULE_DIR$/Day-17/target" />
-      <excludeFolder url="file://$MODULE_DIR$/Day-17/Day-18/target" />
-      <excludeFolder url="file://$MODULE_DIR$/Day-18/target" />
-      <excludeFolder url="file://$MODULE_DIR$/Day_19/target" />
-      <excludeFolder url="file://$MODULE_DIR$/Day_20/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day_01/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day_02/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day_18/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day_17/Day-18/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day_17/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day_16/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day_04/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day_03/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day_19/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day_20/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
